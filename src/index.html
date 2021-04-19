@@ -2,13 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirapay</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <img src="/" alt="Logo Sirapay">
+    </header>
+    <main class="main-options">
+      <h2>Selecciona que prendas te gustaría entregar</h2>
+      <form action="cashout.html">
+        <label for="" class="item-label">
+          <img src="/" alt="" class="item-label--image">
+          <input type="checkbox" class="item-label--checkbox">
+        </label>
+        <input type="submit" id="submit-button">
+      </form>
+    </main>
+    <footer>
+      <p>Contactanos:</p>
+      <span id="facebook">Facebook</span>
+      <span id="instagram">Instagram</span>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

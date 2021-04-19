@@ -1,5 +1,5 @@
 {
-  "name": "card-validation",
+  "name": "sirapay-credit-card",
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
@@ -22,5 +22,18 @@
     "jest": "^26.6.1",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigojgq/sirapay-credit-card.git"
+  },
+  "author": "Rodrigo Goitia",
+  "bugs": {
+    "url": "https://github.com/rodrigojgq/sirapay-credit-card/issues"
+  },
+  "homepage": "https://github.com/rodrigojgq/sirapay-credit-card#readme"
 }
