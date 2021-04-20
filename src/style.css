@@ -7,14 +7,32 @@
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  --light-blue: #C9FFFD;
+  --light-green: #64CCC9;
+  --light-purple: #C5A4F4;
+  --purple: #39215c;
 }
 h2{
   font-size: 2.4rem;
-  color: black;
+  color: var(--purple);
 }
 p {
   font-size: 1.4rem;
-  color: black;
+  font-weight: 700;
+  color:var(--purple);
+}
+a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--light-green);
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-green);
+  padding-bottom: 2px;
+}
+body {
+  background: rgb(201,255,253);
+  background: linear-gradient(45deg, rgba(201,255,253,1) 40%, rgba(197,164,244,1) 60%);
+  background-repeat: no-repeat;
 }
 header {
   width: 100vw;
@@ -32,6 +50,11 @@ header img{
   flex-direction: column;
   align-items: center;
 }
+.main-options h2 {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
+}
 .main-options form {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -39,13 +62,18 @@ header img{
 }
 .main-options .item-container {
   grid-column: 1;
-  width: 100%;
+  width: 90%;
   max-width: 280px;
   height: 200px;
-  margin: 10px 0;
+  margin: 15px 0;
   display: grid;
   grid-template-rows: 150px 1fr;
   place-items: center;
+  border-radius: 10px;
+  background: rgb(201,255,253);
+  background: linear-gradient(45deg, rgba(201,255,253,1) 20%, rgba(197,164,244,1) 80%);
+  box-shadow:  6px -6px 15px #6A3EA8,
+          -6px 6px 15px #64CCC9;
 }
 .main-options .item-container:nth-child(even) {
   grid-column: 2;
@@ -58,26 +86,60 @@ header img{
 .main-options .item-container .item-label {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .main-options #submit-button {
   grid-column: 2;
-  width: 85px;
-  height: 30px;
+  width: 110px;
+  height: 40px;
   margin-top: 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #C5A4F4;
+  box-shadow:  12px -12px 24px #947bb7,
+          -12px 12px 24px #f6cdff;
+}
+.main-options .logo-credit{
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.main-options .logo-credit a{
+  font-size: 1rem;
 }
 footer {
   width: 100%;
-  height: 50px;
-  padding: 0 7vw;
+  height: 70px;
+  padding: 0 10vw;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+footer p {
+  font-size: 1.8rem;
+}
 footer span{
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  margin: 0 13px;
   vertical-align: middle;
+  background-color: var(--purple);
+}
+footer #facebook {
+  -webkit-mask: url('assets/icons/facebook.svg') no-repeat 90% 90%;
+  mask: url('assets/icons/facebook.svg') no-repeat 90% 90%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+footer #instagram {
+  -webkit-mask: url('assets/icons/instagram.svg') no-repeat 100% 100%;
+  mask: url('assets/icons/instagram.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+footer #pinterest {
+  -webkit-mask: url('assets/icons/pinterest.svg') no-repeat 100% 100%;
+  mask: url('assets/icons/pinterest.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
