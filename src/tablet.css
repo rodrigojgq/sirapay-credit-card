@@ -1,0 +1,43 @@
+h2{
+  font-size: 2.8rem;
+}
+p{
+  font-size: 1.6rem;
+}
+header {
+  padding: 15px 12vw;
+}
+.main-options form {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+}
+.main-options .item-container {
+  height: 250px;
+}
+.main-options .item-container:nth-child(3n+4){
+  grid-column: 1;
+}
+.main-options .item-container:nth-child(2),
+.main-options .item-container:nth-child(5),
+.main-options .item-container:nth-child(8) {
+  grid-column: 2;
+}
+.main-options .item-container:nth-child(3),
+.main-options .item-container:nth-child(6),
+.main-options .item-container:nth-child(9),
+.main-options #submit-button {
+  grid-column: 3;
+}
+.main-options #submit-button {
+  grid-row: 5;
+}
+.main-options .item-container .item-image{
+  margin-top: 30px;
+  width: 95%;
+  height: 95%;
+}
+.main-options .logo-credit,
+.main-options .logo-credit a {
+  font-size: 1.4rem;
+}

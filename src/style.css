@@ -64,7 +64,7 @@ header img{
 .main-options .item-container {
   grid-column: 1;
   width: 90%;
-  max-width: 280px;
+  max-width: 400px;
   height: 200px;
   margin: 15px 0;
   display: grid;
@@ -72,7 +72,7 @@ header img{
   place-items: center;
   border-radius: 10px;
   background: rgb(201,255,253);
-  background: linear-gradient(45deg, rgba(201,255,253,1) 20%, rgba(197,164,244,1) 80%);
+  background: linear-gradient(45deg, rgba(201,255,253,1) 60%, rgba(197,164,244,1) 97%);
   box-shadow:  6px -6px 15px #6A3EA8,
           -6px 6px 15px #64CCC9;
 }
@@ -96,32 +96,37 @@ header img{
   height: 40px;
   margin-top: 20px;
   border: 0;
+  font-size: 1.6rem;
+  font-weight: 900;
   border-radius: 6px;
-  background: #C5A4F4;
-  box-shadow:  12px -12px 24px #947bb7,
-          -12px 12px 24px #f6cdff;
+  background: var(--light-blue);
+  box-shadow:  6px -6px 15px #6A3EA8,
+            -6px 6px 15px #64CCC9;
 }
 .main-options .logo-credit{
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  align-self: flex-start;
 }
 .main-options .logo-credit a{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 /* Estilos Casshout */
 .main-cashout{
   width: 95vw;
   max-width: 1200px;
   margin: 10px auto;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 .main-cashout .product-list-container {
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   min-height: 250px;
   padding: 30px;
+  margin: 0 auto;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -177,4 +182,17 @@ footer #pinterest {
   mask: url('assets/icons/pinterest.svg') no-repeat 100% 100%;
   -webkit-mask-size: contain;
   mask-size: contain;
+}
+.main-options #submit-button:hover {
+  background: var(--purple);
+  color: var(--light-blue);
+  cursor: pointer;
+}
+a:hover {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+}
+footer span:hover{
+  background-color: var(--light-green);
+  cursor: pointer;
 }
