@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
   --light-blue: #C9FFFD;
@@ -30,6 +31,7 @@ a {
   padding-bottom: 2px;
 }
 body {
+  min-height: 100vh;
   background: rgb(201,255,253);
   background: linear-gradient(45deg, rgba(201,255,253,1) 40%, rgba(197,164,244,1) 60%);
   background-repeat: no-repeat;
@@ -116,6 +118,7 @@ header img{
 .main-cashout{
   width: 95vw;
   max-width: 1200px;
+  min-height: 80vh;
   margin: 10px auto;
   /* display: flex;
   flex-direction: column;
@@ -124,7 +127,7 @@ header img{
 .main-cashout .product-list-container {
   width: 90%;
   max-width: 600px;
-  min-height: 250px;
+  min-height: 80%;
   padding: 30px;
   margin: 0 auto;
   display: grid;
