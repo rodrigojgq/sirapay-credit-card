@@ -36,11 +36,12 @@ body {
 }
 header {
   width: 100vw;
-  height: 50px;
+  height: 90px;
   padding: 15px 7vw;
 }
 header img{
-  width: 200px;
+  width: 75px;
+  object-fit: contain;
 }
 .main-options {
   width: 95vw;
