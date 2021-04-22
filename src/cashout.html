@@ -23,7 +23,7 @@
       <a href="./index.html">Selecciona más prendas</a>
     </section>
     <section class="card-form-container">
-      <section class="card active" id="card">
+      <section class="card" id="card">
         <div class="front-face">
           <div class="logo-brand">
             <img src="assets/img/visa.png" alt="Marca de Tarjeta">
@@ -64,6 +64,47 @@
           <a href="#" class="link-card">www.sirapay.com</a>
         </div>
       </section>
+      <div class="button-container">
+        <button class="form-button" id="form-button">
+          <span>
+            <!-- Editar icono plus -->
+          </span>
+        </button>
+      </div>
+      <form action="" id="card-form" class="card-form">
+        <div class="group">
+          <label for="inputNumber">Numero tarjeta</label>
+          <input type="number" min="1" id="inputNumber" maxlength="19" autocomplete="off">
+        </div>
+        <div class="group">
+          <label for="inputName">Nombre</label>
+          <input type="text" id="inputName" maxlength="19" autocomplete="off">
+        </div>
+        <div class="flexbox">
+          <div class="group expira">
+            <label for="selectMonth">Expiración</label>
+            <div class="flexbox">
+              <div class="group-select">
+                <select name="month" id="selectMonth">
+                  <option disabled selected>Mes</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="group-select">
+                <select name="year" id="selectYear">
+                  <option disabled selected>Year</option>
+                </select>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="group ccv">
+            <label for="inputCCV">CCV</label>
+            <input type="number" min="1" id="inputCCV" maxlength="3">
+          </div>
+        </div>
+        <button type="submit" class="send-button">Enviar</button>
+      </form>
     </section>
   </main>
   <footer>
@@ -73,6 +114,6 @@
     <span id="instagram" onclick="location='https://www.instagram.com/sirapaybolivia/'"></span>
     <span id="pinterest" onclick="location='ttps://www.pinterest.com/sirapaybo/_saved/'"></span>
   </footer>
-  <script src="index.js" type="module"></script>
+  <script src="cashout.js" type="module"></script>
 </body>
 </html>
