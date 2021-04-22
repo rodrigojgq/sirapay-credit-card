@@ -68,7 +68,7 @@ form.inputName.addEventListener('keyup', (e) => {
   let valueInput = e.target.value;
   form.inputNumber.value = valueInput.replace(/[0-9]/g, '');
   cardName.textContent = valueInput;
-  firm.textContent = valueInput
+  firm.querySelector('p').textContent = valueInput
   if(valueInput == ''){
     cardName.textContent = "Jhon Doe";
     firm.textContent = '';
