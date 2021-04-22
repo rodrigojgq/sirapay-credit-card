@@ -133,6 +133,7 @@ header img{
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(4vh,8vh);
   border-radius: 10px;
   background: rgb(201,255,253);
   background: linear-gradient(45deg, rgba(201,255,253,1) 20%, rgba(197,164,244,1) 80%);
@@ -149,6 +150,125 @@ header img{
 .main-cashout .product-list-container a{
   width: fit-content;
   margin-top: 10px;
+}
+.card-form-container {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*  Estilos Generales de las Tarjetas */
+.card-form-container .card{
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  transition: .3s ease all;
+  transform: rotate(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+.card-form-container .card.active{
+  transform: rotateY(180deg)
+}
+.card-form-container .card > div {
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 0 10px rgba(90, 116,148,0.3);
+}
+/* Card's front-face */
+.card .front-face {
+  width: 100%;
+  /* background */
+}
+.front-face .logo-brand{
+  text-align: right;
+  min-height: 50px;
+}
+.front-face .logo-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 80px;
+}
+.front-face .chip {
+  width: 100%;
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+.front-face .flexbox{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.front-face .group .label {
+  font-size: 1.6rem;
+  /* color */
+  margin-bottom: 5px;
+}
+/* Color de información y tamaño en mayusculas*/
+
+/* Card's Back Face */
+.card .back-face {
+  width: 100%;
+  /* background */
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.back-face .magnetic-band {
+  height: 40px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.back-face .data {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.back-face .data p{
+  margin-bottom: 5px;
+}
+.back-face .data #firm-container{
+  width: 70%;
+}
+.back-face .data #firm-container .firm{
+  height: 40px;
+  background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+.back-face .data .firm p {
+  line-height: 40px;
+  /* font family y color*/
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+.back-face .data #ccv-container{
+  width: 20%;
+}
+.back-face .data #ccv-container .ccv{
+  background: white;
+  height: 40px;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+.back-face .legend{
+  line-height: 24px;
+}
+.back-face .link-card{
+  width: fit-content;
 }
 footer {
   width: 100%;
