@@ -55,7 +55,6 @@ form.inputNumber.addEventListener('keyup', (e) => {
   .trim();
   form.inputNumber.value = valueInput
   cleanNumber = valueInput.replace(/\s/g, '');
-  console.log(validator.isValid(cleanNumber))
   maskNumber = validator.maskify(cleanNumber).replace(/(#{4})/g, '$1 ');
   cardNumber.textContent = maskNumber
   if(valueInput == ''){
