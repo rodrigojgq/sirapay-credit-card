@@ -4,6 +4,9 @@ const validator = {
     let numbers = Number(cardNumber);
     let i = 1;
     let sum = 0;
+    if(cardNumber == "number" || cardNumber === 0){
+      return false;
+    }
     while(numbers > 0) {
       let aux = numbers % 10;
       if(i % 2 === 0) {

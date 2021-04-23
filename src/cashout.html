@@ -7,10 +7,12 @@
   <title>Sirapay</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="tablet.css" media="(min-width: 900px)">
+  <link rel="stylesheet" href="large.css" media="(min-width: 1150px)">
 </head>
 <body>
   <header>
     <img src="./assets/img/sirapay-logo.png" alt="Logo Sirapay">
+    <p>Sirapay</p>
   </header>
   <main class="main-cashout">
     <section class="product-list-container">
@@ -26,7 +28,6 @@
       <section class="card" id="card">
         <div class="front-face">
           <div class="logo-brand" id="logo-brand">
-            <!-- <img src="assets/img/visa.png" alt="Marca de Tarjeta"> -->
           </div>
           <img src="assets/img/chip-tarjeta.png" alt="chip" class="chip">
           <div class="data">
@@ -65,16 +66,16 @@
         </div>
       </section>
       <div class="button-container">
-        <button class="form-button" id="form-button">
+        <button class="form-button active" id="form-button">
           <span>
             <!-- Editar icono plus -->
           </span>
         </button>
       </div>
-      <form action="" id="card-form" class="card-form">
+      <form action="" id="card-form" class="card-form active">
         <div class="group">
           <label for="inputNumber">Numero tarjeta</label>
-          <input type="number" min="1" id="inputNumber" maxlength="19" autocomplete="off">
+          <input type="text" min="1" id="inputNumber" maxlength="19" autocomplete="off">
         </div>
         <div class="group">
           <label for="inputName">Nombre</label>
@@ -98,7 +99,7 @@
           </div>
           <div class="group ccv">
             <label for="inputCCV">CCV</label>
-            <input type="number" min="1" id="inputCCV" maxlength="3">
+            <input type="text" min="1" id="inputCCV" maxlength="3">
           </div>
         </div>
         <button type="submit" class="send-button">Enviar</button>

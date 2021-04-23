@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -40,10 +41,18 @@ header {
   width: 100vw;
   height: 90px;
   padding: 15px 7vw;
+  display: flex;
+  align-items: center;
 }
 header img{
   width: 75px;
   object-fit: contain;
+}
+header p{
+  font-family: 'Pacifico', cursive;
+  font-size: 4.5rem;
+  color: #6b47b5;
+  margin-left: 10px;
 }
 .main-options {
   width: 95vw;
@@ -117,7 +126,7 @@ header img{
 /* Estilos Casshout */
 .main-cashout{
   width: 95vw;
-  max-width: 1200px;
+  max-width: 1300px;
   min-height: 80vh;
   margin: 10px auto;
   /* display: flex;
@@ -136,7 +145,7 @@ header img{
   grid-auto-rows: minmax(4vh,8vh);
   border-radius: 10px;
   background: rgb(201,255,253);
-  background: linear-gradient(45deg, rgba(201,255,253,1) 20%, rgba(197,164,244,1) 80%);
+  background: linear-gradient(45deg, rgba(201,255,253,1) 60%, rgba(197,164,244,1) 97%);
   box-shadow:  6px -6px 15px #6A3EA8,
           -6px 6px 15px #64CCC9;
 }
@@ -175,7 +184,8 @@ header img{
   z-index: 2;
 }
 .card-form-container .card.active{
-  transform: rotateY(180deg)
+  transform: rotateY(180deg);
+  backface-visibility: inherit;
 }
 .card-form-container .card > div {
   padding: 20px;
@@ -263,6 +273,7 @@ header img{
   background: repeating-linear-gradient(#458b89 0, #458b89 5px, var(--purple) 5px, var(--purple) 10px);
 }
 .back-face .data .firm p {
+  font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
   line-height: 40px;
   color: var(--light-blue);

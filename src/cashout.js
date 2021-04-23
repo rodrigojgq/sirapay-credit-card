@@ -1,3 +1,4 @@
+import validator from './validator.js';
 const card = document.querySelector('#card'),
       btnForm = document.querySelector('#form-button'),
       form = document.querySelector('#card-form'),
@@ -45,7 +46,18 @@ for(let i = actualYear; i <= actualYear + 8; i++){
 // Input numero de tarjeta
 form.inputNumber.addEventListener('keyup', (e) => {
   let valueInput = e.target.value;
-  cardNumber.textContent = valueInput;
+  let cleanNumber;
+  let maskNumber;
+  valueInput = valueInput
+  .replace(/\s/g, '')
+  .replace(/\D/g, '')
+  .replace(/([0-9]{4})/g, '$1 ')
+  .trim();
+  form.inputNumber.value = valueInput
+  cleanNumber = valueInput.replace(/\s/g, '');
+  console.log(validator.isValid(cleanNumber))
+  maskNumber = validator.maskify(cleanNumber).replace(/(#{4})/g, '$1 ');
+  cardNumber.textContent = maskNumber
   if(valueInput == ''){
     cardNumber.textContent = "#### #### #### ####";
     logoBrand.innerHTML = '';
@@ -66,7 +78,7 @@ form.inputNumber.addEventListener('keyup', (e) => {
 // Input nombre de tarjeta
 form.inputName.addEventListener('keyup', (e) => {
   let valueInput = e.target.value;
-  form.inputNumber.value = valueInput.replace(/[0-9]/g, '');
+  form.inputName.value = valueInput.replace(/[0-9]/g, '');
   cardName.textContent = valueInput;
   firm.querySelector('p').textContent = valueInput
   if(valueInput == ''){
