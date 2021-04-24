@@ -220,6 +220,27 @@
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+.card-form #cardNumberInput span{
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: var(--purple);
+  right: 30px;
+  top: 185px;
+}
+.card-form #cardNumberInput .invalid{
+  -webkit-mask: url('assets/icons/error.svg') no-repeat 90% 90%;
+  mask: url('assets/icons/error.svg') no-repeat 90% 90%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.card-form #cardNumberInput .valid{
+  -webkit-mask: url('assets/icons/checked.svg') no-repeat 100% 100%;
+  mask: url('assets/icons/checked.svg') no-repeat 100% 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
 .card-form .flexbox{
   display: flex;
   justify-content: space-between;

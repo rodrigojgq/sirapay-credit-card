@@ -45,6 +45,9 @@ header {
 .main-options .logo-credit a {
   font-size: 1.4rem;
 }
+.logo-credit{
+  margin-left: 10vw;
+}
 .front-face .group .label,
 .back-face .group .label,
 .back-face .legend {
@@ -58,6 +61,12 @@ header {
 }
 .card-form .send-button {
   font-size: 2.6rem;
+}
+.card-form #cardNumberInput span{
+  width: 25px;
+  height: 25px;
+  right: 30px;
+  top: 187px;
 }
 footer span{
   width: 40px;

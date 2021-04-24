@@ -126,13 +126,13 @@ header p{
             -6px 6px 15px #64CCC9;
   cursor: pointer;
 }
-.main-options .logo-credit{
+.logo-credit{
   margin-top: 20px;
   font-size: 1.2rem;
-  margin-left: 20px;
+  margin-left: 15px;
   align-self: flex-start;
 }
-.main-options .logo-credit a{
+.logo-credit a{
   font-size: 1.2rem;
 }
 /* Estilos Casshout */
