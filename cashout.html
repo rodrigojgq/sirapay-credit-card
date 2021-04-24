@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirapay</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="card-style.css">
+  <link rel="stylesheet" href="tablet.css" media="(min-width: 900px)">
+</head>
+<body>
+  <header>
+    <img src="./assets/img/sirapay-logo.png" alt="Logo Sirapay">
+    <p>Sirapay</p>
+  </header>
+  <main class="main-cashout">
+    <section class="product-list-container" id="list-container">
+      <a href="./index.html">Selecciona más prendas</a>
+    </section>
+    <section class="card-form-container">
+      <section class="card" id="card">
+        <div class="front-face">
+          <div class="logo-brand" id="logo-brand">
+          </div>
+          <img src="assets/img/chip-tarjeta.png" alt="chip" class="chip">
+          <div class="data">
+            <div class="group" id="number-data">
+              <p class="label">Número Tarjeta</p>
+              <p class="card-number">#### #### #### ####</p>
+            </div>
+            <div class="flexbox">
+              <div class="group" id="name-data">
+                <p class="label">Nombre Tarjeta</p>
+                <p class="card-name">Jhon Doe</p>
+              </div>
+              <div class="group" id="expiration-data">
+                <p class="label">Expiración</p>
+                <p class="card-expiration"><span id="month">MM</span>/<span id="year">AA</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-face">
+          <div class="magnetic-band"></div>
+          <div class="data">
+            <div class="group" id="firm-container">
+              <p class="label">Firma</p>
+              <div class="firm">
+                <p></p>
+              </div>
+            </div>
+            <div class="group" id="ccv-container">
+              <p class="label">CCV</p>
+              <p class="ccv">123</p>
+            </div>
+          </div>
+          <p class="legend">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="link-card">www.sirapay.com</a>
+        </div>
+      </section>
+      <div class="button-container">
+        <button class="form-button active" id="form-button">
+          <span>
+            <!-- Editar icono plus -->
+          </span>
+        </button>
+      </div>
+      <form action="" id="card-form" class="card-form active">
+        <div class="group" id="cardNumberInput">
+          <label for="inputNumber">Numero tarjeta</label>
+          <input type="text" min="1" id="inputNumber" maxlength="19" autocomplete="off">
+          <span id="validlogo"></span>
+        </div>
+        <div class="group">
+          <label for="inputName">Nombre</label>
+          <input type="text" id="inputName" maxlength="19" autocomplete="off">
+        </div>
+        <div class="flexbox">
+          <div class="group expiration">
+            <label for="selectMonth">Expiración</label>
+            <div class="flexbox">
+              <div class="group-select">
+                <select name="month" id="selectMonth">
+                  <option disabled selected>Mes</option>
+                </select>
+              </div>
+              <div class="group-select">
+                <select name="year" id="selectYear">
+                  <option disabled selected>Año</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="group ccv">
+            <label for="inputCCV">CCV</label>
+            <input type="text" min="1" id="inputCCV" maxlength="3">
+          </div>
+        </div>
+        <button type="submit" class="send-button">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <p class="logo-credit">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></p>
+  <footer>
+    <p>Contactanos:</p>
+    <!-- Corregir para que permitan links externos -->
+    <span id="facebook" onclick="location='https://www.facebook.com/Sir%C3%A1pay-105323318232134'"></span>
+    <span id="instagram" onclick="location='https://www.instagram.com/sirapaybolivia/'"></span>
+    <span id="pinterest" onclick="location='ttps://www.pinterest.com/sirapaybo/_saved/'"></span>
+  </footer>
+  <script src="cashout.js" type="module"></script>
+  <script src="creditcard.js" type="module"></script>
+</body>
+</html>

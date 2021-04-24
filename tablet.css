@@ -1,0 +1,84 @@
+h2{
+  font-size: 2.8rem;
+}
+p,
+.card-form label,
+.card-form input,
+.card-form select,
+.send-button {
+  font-size: 1.6rem;
+}
+header {
+  padding: 15px 12vw;
+}
+.main-options form {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+}
+.main-options .item-label {
+  height: 250px;
+}
+.main-options .item-label:nth-child(3n+4){
+  grid-column: 1;
+}
+.main-options .item-label:nth-child(2),
+.main-options .item-label:nth-child(5),
+.main-options .item-label:nth-child(8) {
+  grid-column: 2;
+}
+.main-options .item-label:nth-child(3),
+.main-options .item-label:nth-child(6),
+.main-options .item-label:nth-child(9),
+.main-options #submit-button {
+  grid-column: 3;
+}
+.main-options #submit-button {
+  grid-row: 5;
+}
+.main-options .item-label .item-image{
+  margin-top: 30px;
+  width: 95%;
+  height: 95%;
+}
+.main-options .logo-credit,
+.main-options .logo-credit a {
+  font-size: 1.4rem;
+}
+.logo-credit{
+  margin-left: 10vw;
+}
+.front-face .group .label,
+.back-face .group .label,
+.back-face .legend {
+  font-size: 1.5rem;
+}
+.back-face .data .firm p{
+  font-size: 2rem;
+}
+.back-face .link-card {
+  font-size: 1.4rem;
+}
+.card-form .send-button {
+  font-size: 2.6rem;
+}
+.card-form #cardNumberInput span{
+  width: 25px;
+  height: 25px;
+  right: 30px;
+  top: 187px;
+}
+footer span{
+  width: 40px;
+  height: 40px;
+}
+.front-face .logo-brand img {
+  max-height: 60px;
+}
+
+@media (min-width: 1150px) {
+  .main-cashout {
+    display: flex;
+    align-items: center;
+  }
+}

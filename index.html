@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirapay</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 900px)">
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/sirapay-logo.png" alt="Logo Sirapay">
+      <p>Sirapay</p>
+    </header>
+    <main class="main-options">
+      <h2>Selecciona que prendas te gustaría entregar</h2>
+      <form action="cashout.html">
+        <label for="checkbox-1" class="item-label">
+          <img src="assets/img/canguro.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-1" value="canguros" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Canguros</p>
+            <p class="item-label--price"><span id="canguros-cost">80</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-2" class="item-label">
+          <img src="assets/img/chaqueta.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-2" value="chaquetas" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Chaquetas</p>
+            <p class="item-label--price"><span id="chaquetas-cost">80</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-3" class="item-label">
+          <img src="assets/img/abrigo.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-3" value="abrigos" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Abrigos</p>
+            <p class="item-label--price"><span id="abrigos-cost">100</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-4" class="item-label">
+          <img src="assets/img/polera.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-4" value="poleras" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Polera</p>
+            <p class="item-label--price"><span id="poleras-cost">50</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-5" class="item-label">
+          <img src="assets/img/camisa.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-5" value="camisas" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Camisas</p>
+            <p class="item-label--price"><span id="camisas-cost">60</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-6" class="item-label">
+          <img src="assets/img/pantalon.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-6" value="pantalones" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Pantalones</p>
+            <p class="item-label--price"><span id="pantalones-cost">80</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-7" class="item-label">
+          <img src="assets/img/jean.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-7" value="jeans" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Jeans</p>
+            <p class="item-label--price"><span id="jeans-cost">80</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-8" class="item-label">
+          <img src="assets/img/falda.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-8" value="faldas" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Faldas</p>
+            <p class="item-label--price"><span id="faldas-cost">60</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-9" class="item-label">
+          <img src="assets/img/vestidos.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-9" value="vestidos" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Vestidos</p>
+            <p class="item-label--price"><span id="vestidos-cost">100</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <label for="checkbox-10" class="item-label">
+          <img src="assets/img/blusa.png" alt="" class="item-image">
+          <input type="checkbox" class="item-label--checkbox" id="checkbox-10" value="blusas" name="clothe">
+          <div class="item-label--descrip">
+            <p class="item-label--clothes">Blusas</p>
+            <p class="item-label--price"><span id="blusas-cost">50</span> Bs / Unidad</p>
+          </div>
+        </label>
+        <input type="submit" id="submit-button" value="Continuar">
+      </form>
+    </main>
+    <p class="logo-credit">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> de <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></p>
+    <footer>
+      <p>Contactanos:</p>
+      <!-- Corregir para que permitan links externos -->
+      <span id="facebook" onclick="location='https://www.facebook.com/Sir%C3%A1pay-105323318232134'"></span>
+      <span id="instagram" onclick="location='https://www.instagram.com/sirapaybolivia/'"></span>
+      <span id="pinterest" onclick="location='ttps://www.pinterest.com/sirapaybo/_saved/'"></span>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
