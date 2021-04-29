@@ -101,6 +101,15 @@ header p{
 .main-options .item-label input{
   justify-self: right;
 }
+.main-options .item-label input[type=checkbox] {
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  padding: 10px;
+  margin-right: 3px;
+}
 .main-options .item-label .item-label--descrip{
   justify-self: left;
   margin-left: 15px;
