@@ -122,10 +122,7 @@
   font-size: 1.3rem;
   line-height: 20px;
   color: var(--purple);
-}
-.back-face .link-card{
-  font-size: 1rem;
-  width: fit-content;
+  margin-bottom: 15px;
 }
 /* Contenedor Boton */
 .button-container .form-button {
