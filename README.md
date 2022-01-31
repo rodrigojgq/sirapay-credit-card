@@ -2,7 +2,7 @@
 
 Esta aplicación web permite seleccionar prendas de ropa que se entregaran a la empresa Sirapay para ser refaccionada. Luego envía al usuario a una sección de cobro en la que el usuario puede registrar su tarjeta de crédito o débito. La web no guarda los datos de la tarjeta de crédito y tampoco realiza cobros monetarios a los usuarios.
 
-Para ver la página web haz [click aqui](https://rodrigojgq.github.io/sirapay-credit-card/)
+Para ver la página web haz [click aqui](https://rodruxdev.github.io/sirapay-credit-card/)
 
 
 ## UX
