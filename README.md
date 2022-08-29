@@ -7,8 +7,8 @@ Para ver la página web haz [click aqui](https://rodruxdev.github.io/sirapay-cre
 ## Indice
 
 - [UX](#ux)
-- [Tecnologías](#tecnologias)
-- [Instalación](#instalacion)
+- [Tecnologías](#tecnologías)
+- [Instalación](#instalación)
 - [Licencia](#licencia)
 - [Autor](#autor)
 
