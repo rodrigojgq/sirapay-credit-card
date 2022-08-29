@@ -4,6 +4,13 @@ Esta aplicación web permite seleccionar prendas de ropa que se entregaran a la 
 
 Para ver la página web haz [click aqui](https://rodruxdev.github.io/sirapay-credit-card/)
 
+## Indice
+
+- [UX](#ux)
+- [Tecnologías](#tecnologias)
+- [Instalación](#instalacion)
+- [Licencia](#licencia)
+- [Autor](#autor)
 
 ## UX
 
@@ -24,14 +31,6 @@ Para pantallas de pc extiende las columnas de mobile a tres columnas diferentes.
 Para el diseño se utilizo la tendencia de diseño llamada neomorfismo.
 El diseño de la sección de la tarjeta de crédito fue realizado mediante el tutorial de [Carlos Arturo - FalconMasters](https://github.com/falconmasters) mediante el siguiente [video](https://www.youtube.com/watch?v=7bciaLTTr7s)
 
-### Feedback
-
-Luego que la dueña de la empresa viera los diseños iniciales, sugirío realizar el cambio en pantallas mobile a dos columnas para mostrar las prendas.
-Además de utilizar un degradado para el fondo de la página y los contenedores.
-
-Con estos cambios ya no se mantiene el neomorfismo como tal pero se tiene una variación por el degradado.
-
-
 ### Previsualizacion de Pantalla Mobile
 
 Pantalla 1
@@ -48,7 +47,7 @@ Pantalla 1
 Pantalla 2
 ![image](/src/assets/img/preview-desktop2.png)
 
-## Tecnologías Utilizadas
+## Tecnologías
 
 Para el proyecto se utilizó las siguientes tecnologías:
 
@@ -56,7 +55,7 @@ Para el proyecto se utilizó las siguientes tecnologías:
 * CSS 3
 * JavaScript
 
-## Instalación del Proyecto en Local
+## Instalación
 
 1. Clona o descarga el repositorio en tu equipo.
 2. Ingresa al directiorio del repositorio por terminal.
@@ -65,6 +64,14 @@ Para el proyecto se utilizó las siguientes tecnologías:
 5. Ingresa en tu navegador a la dirección `http://localhost:5000`.
 
 Este proyecto es parte de la ruta del bootcamp de [Laboratoria - Frontend Developer](https://www.laboratoria.la/) del año 2020. Estoy realizando sus proyectos de forma autodidacta e independiente.
+
+## Licencia
+
+> Este proyecto esta bajo la licencia MIT.
+
+## Autor
+
+Hecho con 💚 por [rodruxdev](https://twitter.com/rodruxdev)
 
 <div align="center">
   <h3>
